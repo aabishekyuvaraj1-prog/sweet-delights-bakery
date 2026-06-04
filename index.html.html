@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Delights Bakery</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#fff8f0;color:#333}
+header{background:#ff7aa2;color:white;padding:20px;text-align:center}
+nav{display:flex;justify-content:center;gap:20px;background:#ff5f8f;padding:12px}
+nav a{color:white;text-decoration:none;font-weight:bold}
+.hero{padding:80px 20px;text-align:center}
+.btn{background:#ff5f8f;color:white;padding:12px 20px;border-radius:8px;text-decoration:none}
+.section{padding:50px 20px}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.card{background:white;width:260px;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.card img{width:100%;border-radius:8px}
+form{max-width:600px;margin:auto}
+input,select,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:6px}
+button{background:#ff5f8f;color:white;border:none;padding:12px;width:100%;border-radius:6px;cursor:pointer}
+footer{background:#222;color:white;text-align:center;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>🍰 Sweet Delights Bakery</h1>
+<p>Fresh Cakes • Custom Designs • Online Orders</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#cakes">Cakes</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+<h1>Custom Cakes For Every Celebration</h1>
+<p>Birthday, Wedding, Anniversary and Special Occasion Cakes.</p>
+<a class="btn" href="#order">Order Now</a>
+</section>
+
+<section class="section" id="cakes">
+<h2 style="text-align:center">Popular Cakes</h2>
+<div class="cards">
+<div class="card">
+<img src="https://picsum.photos/300/200?1">
+<h3>Chocolate Truffle</h3>
+<p>Rich chocolate layers.</p>
+</div>
+<div class="card">
+<img src="https://picsum.photos/300/200?2">
+<h3>Red Velvet</h3>
+<p>Classic cream cheese delight.</p>
+</div>
+<div class="card">
+<img src="https://picsum.photos/300/200?3">
+<h3>Black Forest</h3>
+<p>Cherry and chocolate goodness.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="order">
+<h2 style="text-align:center">Place an Order</h2>
+<form onsubmit="placeOrder(event)">
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<select required>
+<option value="">Select Cake</option>
+<option>Chocolate Truffle</option>
+<option>Red Velvet</option>
+<option>Black Forest</option>
+</select>
+<input type="date" required>
+<textarea placeholder="Custom Message"></textarea>
+<button type="submit">Submit Order</button>
+</form>
+</section>
+
+<footer id="contact">
+<h3>Sweet Delights Bakery</h3>
+<p>Email: orders@sweetdelights.com</p>
+<p>Phone: +91 98765 43210</p>
+</footer>
+
+<script>
+function placeOrder(e){
+e.preventDefault();
+alert("Order submitted successfully! (Demo Website)");
+}
+</script>
+</body>
+</html>
